@@ -1,0 +1,121 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Simple Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;display=swap" rel="stylesheet"/>
+   <style>
+   .font-ars {
+      font-family: 'Orbitron', sans-serif;
+    }
+  nav button:hover,
+  nav a:hover {
+    background-color: #d99b99;
+    color: black;
+    border-color: white;
+    transform: scale(1.05);
+  }
+
+    .hover-text:hover {
+      color: #d99b99;
+      transition: color 0.3s ease;
+    }
+    </style>
+ </head>
+
+ <body class="bg-[#1a1a1a] min-h-screen">
+  <div class="w-full">
+   <header class="bg-black rounded-t-md px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-1">
+    <img src="arss[1].png" alt="Logo" style="width: 100px; height: auto;">
+     </span>
+    </div>
+    <div class="flex items-center space-x-4">
+     <div class="relative">
+      <input class="rounded-full w-28 h-8 pl-3 pr-8 text-black text-sm focus:outline-none" placeholder="" type="search"/>
+      <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 text-black text-xs">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+     <button aria-label="User profile" class="text-white text-xl">
+      <i class="fas fa-user-circle">
+      </i>
+     </button>
+     <button aria-label="More options" class="text-white text-2xl leading-none">
+      <i class="fas fa-ellipsis-v">
+      </i>
+     </button>
+    </div>
+   </header>
+
+ <nav class="bg-black px-6 py-2 flex justify-center space-x-4 text-sm text-white">
+  <a href="Home Blog.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">HOME</a>
+  <a href="sport.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">SPORT</a>
+  <a href="nusantara.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">NUSANTARA</a>
+  <a href="bisnis.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">BISNIS</a>
+  <a href="technology.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">TECHNOLOGY</a>
+  <a href="nature.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">NATURE</a>
+  <a href="health.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">HEALTH</a>
+  <a href="internasional.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">INTERNASIONAL</a>
+
+<!-- MORE BUTTON WITH DROPDOWN -->
+    <div class="relative">
+      <button id="moreBtn" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">
+        MORE
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div id="moreMenu" class="hidden absolute left-0 mt-2 bg-white text-black rounded-md shadow-lg w-56 z-50 p-2">
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">PARAPUAN</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Otomotif</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Musik</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Sport</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Kesehatan</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Images</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Tribun Epaper</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Web Stories</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Travel</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Karir</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Longform</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Indeks Tag</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Indeks Berita</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SCRIPT FOR DROPDOWN -->
+  <script>
+    const moreBtn = document.getElementById("moreBtn");
+    const moreMenu = document.getElementById("moreMenu");
+
+    // Toggle dropdown menu
+    moreBtn.addEventListener("click", () => {
+      moreMenu.classList.toggle("hidden");
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener("click", function (event) {
+      if (!moreBtn.contains(event.target) && !moreMenu.contains(event.target)) {
+        moreMenu.classList.add("hidden");
+      }
+    });
+  </script>
+
+</nav>
+ <body class="bg-white">
+  <div class="max-w-4xl mx-auto mt-8">
+  <img alt="Penampakan Ijazah Jokowi saat Dipamerkan di Konpers Bareskrim Polri" class="w-full h-64 object-cover rounded" src="ijazah.jpg"/>
+   <p class="mt-4 text-white text-sm leading-relaxed">
+   Pada konferensi pers yang digelar oleh Bareskrim Polri pada Kamis, 22 Mei 2025, terkait dugaan ijazah palsu Presiden Joko Widodo (Jokowi), pihak kepolisian menampilkan foto dari fotokopi ijazah Sarjana Fakultas Kehutanan Universitas Gadjah Mada (UGM) milik Jokowi. Dalam foto tersebut, tampak ijazah yang disahkan pada 5 November 1985, dengan foto Jokowi berkacamata. Namun, ijazah asli tidak ditampilkan dalam konferensi pers tersebut. Direktur Tindak Pidana Umum Bareskrim Polri, Brigjen Pol Djuhandhani Rahardjo Puro, menjelaskan bahwa penggunaan salinan ijazah dalam konferensi pers tersebut menyesuaikan dengan materi aduan yang dilaporkan oleh masyarakat, dalam hal ini Tim Pembela Ulama dan Aktivis (TPUA). Ijazah asli telah diperlihatkan kepada penyidik dan telah melalui uji laboratorium forensik (labfor). Djuhandhani menegaskan bahwa hasil uji labfor menunjukkan bahwa ijazah tersebut identik dengan dokumen pembanding dari tiga rekan seangkatan Jokowi di UGM, baik dari segi bahan kertas, tinta, maupun teknik pencetakannya .
+Meskipun demikian, Tim Pembela Ulama dan Aktivis (TPUA) selaku pelapor dugaan ijazah palsu Jokowi meminta agar hasil uji forensik perlu didalami lebih lanjut. Wakil Ketua TPUA, Rizal Fadillah, menyatakan bahwa pihaknya memerlukan pendalaman dan pengkajian atas hasil uji forensik Bareskrim Mabes Polri sehingga dapat diajukan keberatan-keberatannya. Ia juga meminta agar proses penyelidikan turut melibatkan pihak pengadu dan ahli dari pihaknya serta menilai bahwa hasil uji dokumen-dokumen perlu transparan .
+Dengan demikian, meskipun Bareskrim Polri telah memastikan keaslian ijazah Jokowi melalui uji forensik, proses hukum terkait kasus ini belum sepenuhnya selesai dan masih dapat berkembang sesuai dengan prosedur hukum yang berlaku.
+   </p>
+  </div>
+ </body>
+</html>

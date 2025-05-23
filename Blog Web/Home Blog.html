@@ -1,0 +1,356 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   ARS NEWS
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .font-ars {
+      font-family: 'Orbitron', sans-serif;
+    }
+  nav button:hover,
+  nav a:hover {
+    background-color: #d99b99;
+    color: black;
+    border-color: white;
+    transform: scale(1.05);
+  }
+
+    .hover-text:hover {
+      color: #d99b99;
+      transition: color 0.3s ease;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+  .footer-content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+    padding: 0 20px;
+    color: #fff;
+  }
+  footer a {
+    color: #4fc3f7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #82c7ff;
+  }
+  .copyright {
+    margin-top: 8px;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+  }
+  </style>
+ </head>
+ <body class="bg-[#1a1a1a] min-h-screen">
+  <div class="w-full">
+   <header class="bg-black rounded-t-md px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center space-x-1">
+    <img src="arss[1].png" alt="Logo" style="width: 100px; height: auto;">
+     </span>
+    </div>
+    <div class="flex items-center space-x-4">
+     <div class="relative">
+      <input class="rounded-full w-28 h-8 pl-3 pr-8 text-black text-sm focus:outline-none" placeholder="" type="search"/>
+      <button aria-label="Search" class="absolute right-2 top-1/2 -translate-y-1/2 text-black text-xs">
+       <i class="fas fa-search">
+       </i>
+      </button>
+     </div>
+     <a href="profile.html" aria-label="User profile" class="text-white text-xl">
+  <i class="fas fa-user-circle"></i>
+</a>
+<a href="setting.html" aria-label="Settings" class="text-white text-2xl leading-none">
+  <i class="fas fa-ellipsis-v"></i>
+</a>
+     </button>
+    </div>
+   </header>
+
+ <nav class="bg-black px-6 py-2 flex justify-center space-x-4 text-sm text-white">
+  <a href="Home Blog.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">HOME</a>
+  <a href="sport.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">SPORT</a>
+  <a href="nusantara.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">NUSANTARA</a>
+  <a href="bisnis.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">BISNIS</a>
+  <a href="technology.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">TECHNOLOGY</a>
+  <a href="nature.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">NATURE</a>
+  <a href="health.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">HEALTH</a>
+  <a href="internasional.html" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">INTERNASIONAL</a>
+
+<!-- MORE BUTTON WITH DROPDOWN -->
+    <div class="relative">
+      <button id="moreBtn" class="px-3 py-1 font-semibold hover:bg-[#d99b99] hover:rounded-full">
+        MORE
+      </button>
+
+      <!-- Dropdown Menu -->
+      <div id="moreMenu" class="hidden absolute left-0 mt-2 bg-white text-black rounded-md shadow-lg w-56 z-50 p-2">
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">PARAPUAN</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Otomotif</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Musik</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Sport</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Kesehatan</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Images</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Tribun Epaper</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Web Stories</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Travel</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Karir</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Longform</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Indeks Tag</a>
+        <a href="#" class="block px-3 py-2 hover:bg-gray-100 rounded">Indeks Berita</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SCRIPT FOR DROPDOWN -->
+  <script>
+    const moreBtn = document.getElementById("moreBtn");
+    const moreMenu = document.getElementById("moreMenu");
+
+    // Toggle dropdown menu
+    moreBtn.addEventListener("click", () => {
+      moreMenu.classList.toggle("hidden");
+    });
+
+    // Close dropdown if clicked outside
+    document.addEventListener("click", function (event) {
+      if (!moreBtn.contains(event.target) && !moreMenu.contains(event.target)) {
+        moreMenu.classList.add("hidden");
+      }
+    });
+  </script>
+
+</nav>
+  <section class="bg-white p-4 text-[12px] text-black">
+  <p class="mb-3 font-semibold text-black">BERITA TRENDING :</p>
+
+  <div id="scrollContainer" class="flex space-x-4 overflow-x-auto whitespace-nowrap mb-6 no-scrollbar scroll-smooth">
+    
+    <!-- ITEM -->
+    <a href="detail1.html" class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="Al aqsa.jpg" />
+      <div class="text-center text-[12px] leading-tight">Puluhan Warga Israel 'Serbu' Masjid Al Aqsa, Dikawal Polisi</div>
+    </a>
+
+    <a href="detail2.html" class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="Artis.jpg" />
+      <div class="text-center text-[12px] leading-tight">10 Artis Terbaru Disebut di Sidang P Diddy, Ada Britney Spears</div>
+    </a>
+
+    <a href="detail3.html" class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="ijazah.jpg" />
+      <div class="text-center text-[12px] leading-tight">Penampakan Ijazah Jokowi saat Dipamerkan di Konpers Bareskrim Polri</div>
+    </a>
+
+    <a href="detail4.html" class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="pembalap.jpg" />
+      <div class="text-center text-[12px] leading-tight">Hasil F1 GP Emilia Romagna: Verstappen Menang, Hamilton Keempat</div>
+    </a>
+
+    <a href="detail5.html" class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="pemain bola.jpg" />
+      <div class="text-center text-[12px] leading-tight">Thom Haye Resmi Berpisah dengan Almere City</div>
+    </a>
+
+    <!-- Berita Tambahan -->
+    <div class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="https://storage.googleapis.com/a1aa/image/3b3b6c57-2efd-49bb-34a7-216e8c458778.jpg" />
+      <div class="text-center text-[12px] leading-tight">Berita Trending 6</div>
+    </div>
+
+    <div class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="https://storage.googleapis.com/a1aa/image/3b3b6c57-2efd-49bb-34a7-216e8c458778.jpg" />
+      <div class="text-center text-[12px] leading-tight">Berita Trending 7</div>
+    </div>
+
+    <div class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="https://storage.googleapis.com/a1aa/image/3b3b6c57-2efd-49bb-34a7-216e8c458778.jpg" />
+      <div class="text-center text-[12px] leading-tight">Berita Trending 8</div>
+    </div>
+
+    <div class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="https://storage.googleapis.com/a1aa/image/3b3b6c57-2efd-49bb-34a7-216e8c458778.jpg" />
+      <div class="text-center text-[12px] leading-tight">Berita Trending 9</div>
+    </div>
+
+    <div class="min-w-[160px] flex-shrink-0 border border-gray-300 rounded-md p-3 flex flex-col items-center hover:shadow-lg">
+      <img class="w-full h-28 object-cover rounded-md mb-3" src="https://storage.googleapis.com/a1aa/image/3b3b6c57-2efd-49bb-34a7-216e8c458778.jpg" />
+      <div class="text-center text-[12px] leading-tight">Berita Trending 10</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const scrollContainer = document.getElementById('scrollContainer');
+  let scrollStep = 170; // Lebar item sudah diperbesar
+  let delay = 2000; // 2 detik delay
+  let interval;
+
+  function autoScroll() {
+    if (!scrollContainer) return;
+
+    scrollContainer.scrollBy({
+      left: scrollStep,
+      behavior: 'smooth'
+    });
+
+    if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 1) {
+      setTimeout(() => {
+        scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+      }, delay);
+    }
+  }
+
+  interval = setInterval(autoScroll, delay);
+</script>
+
+<section class="p-4 bg-white min-h-screen">
+  <p class="mb-4 font-semibold text-black text-lg">INFORMASI BERITA HARI INI :</p>
+  <div id="berita-wrapper" class="space-y-14 relative z-0"></div>
+</section>
+
+<script>
+  const semuaBerita = [
+    [
+      { img: "https://storage.googleapis.com/a1aa/image/be2515d1-c671-42e2-73b3-83fb3166d1b7.jpg", text: "Pemerintah Luncurkan Program Baru" },
+      { img: "https://storage.googleapis.com/a1aa/image/09bd5f46-b527-486e-c3f4-dc614e11a144.jpg", text: "Teknologi AI Meningkatkan Produktivitas" },
+      { img: "https://storage.googleapis.com/a1aa/image/44e9bc87-cefa-4c9e-99c6-33771d6d846f.jpg", text: "Cuaca Ekstrem Melanda Wilayah Timur" },
+      { img: "https://storage.googleapis.com/a1aa/image/9bcb5361-9c56-4f54-18c7-638cb46342d8.jpg", text: "Kesehatan Mental Jadi Prioritas Nasional" },
+      { img: "https://storage.googleapis.com/a1aa/image/7db27fdc-8ee5-4078-59c1-1ff6df8985a3.jpg", text: "Bisnis Startup Meningkat di Tahun Ini" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Ekonomi Tumbuh Stabil di Kuartal Pertama" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Inovasi Energi Terbarukan Kian Diminati" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-3.jpg", text: "Festival Budaya Digelar di 5 Kota" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-4.jpg", text: "Startup Lokal Menyasar Pasar Internasional" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-4.jpg", text: "Investasi Digital Capai Rekor Baru" }
+    ],
+    [
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Peluncuran Satelit Komunikasi" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-3.jpg", text: "Pendidikan Inklusif Diperluas" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-4.jpg", text: "Kerja Sama Regional ASEAN" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Peningkatan Ekspor Produk Lokal" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Pameran UMKM 2025" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Perbaikan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+    ],
+    [
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-3.jpg", text: "Pengembangan Transportasi Umum" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Kampanye Kesehatan Nasional" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Pemanfaatan Big Data Pemerintah" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-4.jpg", text: "Riset Energi Listrik Berbasis Surya" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-3.jpg", text: "Peningkatan Literasi Digital di Sekolah" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Perbaikan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Digitalisasi Sekolah di Daerah Terpencil" }
+    ],
+    [
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Penguatan Ketahanan Pangan" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-4.jpg", text: "Konser Musik Internasional di Jakarta" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Startup EduTech Peroleh Pendanaan" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-1.jpg", text: "Digitalisasi Layanan Publik" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-3.jpg", text: "Infrastruktur Jalan Dipercepat" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Perbaikan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Kemajuan Teknologi Pertanian" },
+      { img: "https://storage.googleapis.com/a1aa/image/sample-news-2.jpg", text: "Gerakan Hijau Nasional Dimulai" }
+    ]
+  ];
+
+  function buatBarisBerita(beritaArray, index) {
+    const container = document.createElement("div");
+    container.className = `
+      berita-row-${index}
+      flex gap-4
+      overflow-x-auto overflow-y-visible
+      no-scrollbar whitespace-nowrap
+      px-2 relative z-0
+    `;
+
+    beritaArray.forEach(item => {
+      const card = document.createElement("div");
+      card.className = `
+        relative z-10
+        min-w-[160px] max-w-[160px]
+        border-2 border-gray-400 
+        rounded-lg p-2 
+        bg-white shadow-md 
+        hover:scale-105 hover:shadow-lg active:scale-95 
+        transition-transform duration-300 
+        flex flex-col
+      `;
+
+      const img = document.createElement("img");
+      img.src = item.img;
+      img.alt = item.text;
+      img.className = "w-full h-24 object-cover rounded-md mb-2";
+
+      const text = document.createElement("div");
+      text.className = `
+        text-sm text-black text-center 
+        leading-snug break-words 
+        whitespace-normal overflow-hidden line-clamp-2
+      `;
+      text.textContent = item.text;
+
+      card.appendChild(img);
+      card.appendChild(text);
+      container.appendChild(card);
+    });
+
+    return container;
+  }
+
+  const wrapper = document.getElementById("berita-wrapper");
+
+  semuaBerita.forEach((baris, index) => {
+    const row = buatBarisBerita(baris, index);
+    wrapper.appendChild(row);
+  });
+
+  semuaBerita.forEach((_, index) => {
+    const container = document.querySelector(`.berita-row-${index}`);
+    if (!container) return;
+
+    let scrollPos = 0;
+    const scrollStep = 170;
+
+    setInterval(() => {
+      scrollPos += scrollStep;
+      if (scrollPos >= container.scrollWidth - container.clientWidth) {
+        scrollPos = 0;
+      }
+      container.scrollTo({ left: scrollPos, behavior: "smooth" });
+    }, 2500);
+  });
+</script>
+<footer>
+  <div class="footer-content">
+    &copy; 2024 YourCompanyName. All rights reserved.
+    <div class="copyright">
+      Designed by Kelompok 7
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
